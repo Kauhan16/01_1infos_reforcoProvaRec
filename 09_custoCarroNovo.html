@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
+    const valorDeFabrica = Number(prompt("Digite o valor de fábrica do veículo:"))
 
     //PROCESSAMENTO
-
+    const porcentagemDoDistribuidor = valorDeFabrica * (28 / 100)
+    const porcentagemDosImpostos = valorDeFabrica * (45 / 100)
+    const valorTotalDoVeiculo = valorDeFabrica + porcentagemDoDistribuidor + porcentagemDosImpostos
 
     //SAÍDA
+    document.write(`O preço final do veículo será de R$ ${valorTotalDoVeiculo.toFixed(2)}.`)
 
 </script>

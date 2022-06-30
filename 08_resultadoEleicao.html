@@ -1,15 +1,29 @@
 <script>
     /*
     PROBLEMA
-    Faça um script que receba o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores. 
+    Faça um script que receba o número total de eleitores de um município, o número de votos brancos, nulos e válidos. 
+    Calcular e escrever o percentual que cada um representa em relação ao total de eleitores. 
     */
 
     //ENTRADA
-
+    const totalDeEleitores = parseInt(prompt("Digite a quantidade total de eleitores:"))
+    const votosEmBranco = parseInt(prompt("Digite a quantidade votos em branco:"))
+    const votosNulos = parseInt(prompt("Digite a quantidade votos nulos:"))
+    //const votosValidos = parseInt(prompt("Digite a quantidade votos válidos:"))
 
     //PROCESSAMENTO
-
+    if (totalDeEleitores >= (votosEmBranco + votosNulos)){
+        const porcentagemDeVotosEmBranco = (votosEmBranco * 100) / totalDeEleitores
+        const porcentagemDeVotosNulos = (votosNulos * 100) / totalDeEleitores
+        const porcentagemDeVotosValidos = 100 - (porcentagemDeVotosEmBranco + porcentagemDeVotosNulos)
+    }else{
+        document.write(`A votação foi fraudada!`)
+    }
 
     //SAÍDA
+    document.write(`Sobre o total de ${totalDeEleitores} votantes, tiveram:<br><br>
+    - ${porcentagemDeVotosEmBranco.toFixed(2)}% votos em branco;<br>
+    - ${porcentagemDeVotosNulos.toFixed(2)}% votos nulos;<br>
+    - ${porcentagemDeVotosValidos.toFixed(2)}% votos válidos.`)
 
 </script>

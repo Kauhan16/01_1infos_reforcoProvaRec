@@ -1,15 +1,18 @@
 <script>
     /*
     PROBLEMA
-    Faça um script que receba as dimensões de um retângulo (base e altura), calcule e apresente a área total do retângulo. 
+    Faça um script que receba uma medida do quadrado, 
+    calcule e apresente a área total do quadrado.
     */
 
     //ENTRADA
-
+    const ladoDoRetangulo = Number(prompt("Digite a largura do retângulo:"))
+    const alturaDoRetangulo = Number(prompt("Digite a altura do retângulo:"))
 
     //PROCESSAMENTO
-
+    const medidaDoRetangulo = ladoDoRetangulo * alturaDoRetangulo
 
     //SAÍDA
+    document.write(`A área do retangulo é de ${medidaDoRetangulo.toFixed(2)}.`)
 
 </script>
