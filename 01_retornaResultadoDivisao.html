@@ -1,0 +1,23 @@
+<script>
+    /*
+    PROBLEMA
+    Faça um script que peça dois números e retorne:
+    - o inteiro resultante da divisão entre os dois números
+    - o resto resultante da divisão entre os dos números
+    */
+
+    //ENTRADA
+    const numero1 = Number(prompt("Digite o primeiro número: "))
+    const numero2 = Number(prompt("Digite o segundo número: "))
+
+    //PROCESSAMENTO
+    const interoResultanteDaDivisao = parseInt(numero1 / numero2)
+    const restoResultanteDaDivisao = 
+        numero1 / numero2 - interoResultanteDaDivisao
+
+    //SAÍDA
+    document.write(`O resultado inteiro é 
+    ${interoResultanteDaDivisao} e o resto é 
+    ${restoResultanteDaDivisao.toFixed(2)}.`)
+
+</script>
