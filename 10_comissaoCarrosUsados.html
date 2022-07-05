@@ -13,12 +13,12 @@
     */
 
      //ENTRADA
-
-
+    const salario = Number(prompt("salario fixo de:"))
+    const carrosVendidos = Number(prompt("carros vendidos"))
     //PROCESSAMENTO
-
-
+const comissao = salario * (5 / 100)
+const carroVend = carrosVendidos * (3 / 100)
+const salarioFinal = comissao + carroVend + salario
     //SAÍDA
-    
-
+    document.write(`O valor do salario base foi de: ${salario.toFixed(2)} Reais,o valor do carros vendidos foi de: ${carrosVendidos.toFixed(0)},o valor do salario final foi de: ${salarioFinal.toFixed(2)} Reais, `)
 </script>

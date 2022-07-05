@@ -6,11 +6,12 @@
     */
 
     //ENTRADA
-
+const precoDoCarro = parseInt(prompt("preço do carro"))
 
     //PROCESSAMENTO
-
-
+const distro = precoDoCarro * (28 / 100)
+const impo = precoDoCarro * (45 / 100)
+const precoFinal = impo + distro + precoDoCarro
     //SAÍDA
-
+    document.write(`O valor final do carro foi de: ${precoFinal.toFixed(2)} Reias`)
 </script>

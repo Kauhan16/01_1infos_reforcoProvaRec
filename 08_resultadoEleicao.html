@@ -5,11 +5,14 @@
     */
 
     //ENTRADA
-
-
-    //PROCESSAMENTO
-
-
+const totaDeEleitores = Number(prompt("Numero de pessoas que possam votar:"))
+const brancos = Number(prompt("Numero de pessoas que votaram em branco:"))
+const validos = Number(prompt("Numero de pessoas que validaram o voto:"))
+const nulos = Number(prompt("Numero de pessoas que votaram nulo:"))    
+//PROCESSAMENTO
+const porceNulos = totaDeEleitores / nulos 
+const porceBrancos = totaDeEleitores / brancos 
+const porceValidos = totaDeEleitores / validos
     //SAÍDA
-
+document.write(`O percentual de votos nulos foi ${porceNulos.toFixed(2)}%,O percentual de votos em brancos foi ${porceBrancos.toFixed(2)}%,O percentual de votos validos foi ${porceValidos.toFixed(2)}%`)
 </script>
